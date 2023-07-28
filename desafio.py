@@ -44,9 +44,10 @@ while True:
             print('Você excedeu o número de saques diários! Máximo 3 saques por dia')
         continue
     if opcao == 'e':
-        print('Extrato')
-        print(extrato)
-        print(f'Seu saldo atual é de R$ {saldo:.2f}')
+        print('\n==================== Extrato ====================')
+        print('Não existem movimentações para exibir!' if not extrato else extrato)
+        print(f'\nSeu saldo atual é de R$ {saldo:.2f}')
+        print('\n=================================================')
         continue
     if opcao == 'q':
         break
